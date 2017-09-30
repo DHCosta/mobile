@@ -1,0 +1,32 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.nav{
+	position: relative;
+}
+
+.nav-mobile{
+	position: absolute;
+	right: 30px;
+	width: 400px;
+	list-style-type: none;
+	background-color: purple;
+}
+
+.nav-mobile a{
+	display: block;
+	padding: 20px;
+	background-color: #060;
+	border-bottom: 1px dashed blue;
+
+	color: #FFF;
+	text-decoration: none;
+}
+
+.nav-mobile a:hover{
+	background-color: orange;
+}
