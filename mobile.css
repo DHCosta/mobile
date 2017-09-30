@@ -7,12 +7,14 @@
 
 .nav{
 	position: relative;
+	display: none;
 }
 
 .nav-mobile{
 	position: absolute;
 	right: 30px;
 	width: 400px;
+	display: none;
 	list-style-type: none;
 	background-color: purple;
 }
@@ -29,4 +31,44 @@
 
 .nav-mobile a:hover{
 	background-color: orange;
+}
+
+.toggle{
+	display: block;
+}
+
+
+/* MENU ESCRITORIO*/
+
+.nav-desktop{
+	max-width: 1000px;
+	background-color: violet;
+	display: flex;
+	list-style-type: none;
+}
+
+.nav-desktop li{
+	flex-grow: 1;
+}
+
+.nav-desktop a{
+	display: block;
+	text-align: center;
+	padding: 10px;
+
+	text-decoration: none;
+}
+
+.nav-desktop a:hover{
+	color: black;
+}
+
+
+@media (max-width: 767px){
+	.nav{
+		display: block;
+	}
+	.nav-desktop{
+		display: none;
+	}
 }
